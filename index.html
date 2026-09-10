@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Aniruddh's Workspace</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav__mark">Showcase</div>
+    <ul class="nav__links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#stack">Stack</a></li>
+      <li><a href="#lab">Lab</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero" id="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <canvas id="hero-canvas"></canvas>
+      <div class="hero__scrim"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__kicker">Chennai / IN</p>
+      <h1 class="hero__title">Hi, i'm aniruddh, a software engineer<br>who loves to do UI/UX</h1>
+      <p class="hero__sub">Providing a Better UI/UX Experience</p>
+      <div class="hero__actions">
+        <a href="#lab" class="btn btn--primary">See the lab</a>
+        <a href="#stack" class="btn btn--ghost">The stack</a>
+      </div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">scroll</div>
+  </header>
+
+  <section class="marquee-section" id="stack">
+    <p class="section-label">Tools &amp; Structure</p>
+    <div class="marquee" id="marquee-row-1">
+      <div class="marquee__track" id="track-1"></div>
+    </div>
+    <div class="marquee marquee--reverse" id="marquee-row-2">
+      <div class="marquee__track" id="track-2"></div>
+    </div>
+  </section>
+
+  <section class="work" id="work">
+    <p class="section-label">Selected work</p>
+    <h2 class="work__title">What I've built.</h2>
+
+    <div class="work__tabs">
+      <button class="work__tab active" data-target="tab-non-affiliated">Non-affiliated</button>
+      <button class="work__tab" data-target="tab-custom-designs">Custom Designs</button>
+    </div>
+
+    <div class="work__grid" id="tab-non-affiliated">
+      <div class="work__tile">
+        <img src="assets/work/non-affiliated/Mercedes.png" alt="" onerror="this.parentElement.classList.add('work__tile--empty'); this.remove();">
+      </div>
+      <div class="work__tile">
+        <img src="assets/work/non-affiliated/Porsche.png" alt="" onerror="this.parentElement.classList.add('work__tile--empty'); this.remove();">
+      </div>
+      <div class="work__tile">
+        <img src="assets/work/non-affiliated/Rolls Royce.png" alt="" onerror="this.parentElement.classList.add('work__tile--empty'); this.remove();">
+      </div>
+    </div>
+
+    <div class="work__grid" id="tab-custom-designs" hidden>
+      <div class="work__tile">
+        <img src="assets/work/custom-designs/Website.png" alt="" onerror="this.parentElement.classList.add('work__tile--empty'); this.remove();">
+      </div>
+    </div>
+  </section>
+
+  <section class="lab" id="lab">
+    <div class="lab__text">
+      <p class="section-label">The lab</p>
+      <h2>Every build started on this thing.</h2>
+      <p class="lab__copy">A ThinkPad</p>
+      <p>My favourite personal PC, in this case... a laptop, where i trust and develop stuff i wanna test and use; The thing that accompanies me to earn and keep going.</p>
+    </div>
+    <div class="lab__canvas-wrap">
+      <canvas id="laptop-canvas"></canvas>
+      <p class="lab__hint">drag to rotate</p>
+    </div>
+  </section>
+
+  <footer class="footer" id="contact">
+    <p>This is just a sample of what i can build in 5 minutes using AI and docker</p>
+    <p class="footer__small">Hope it's a pleasure working with your creativity and vision, let's bring those ideas to life!</p>
+    <a href="https://www.linkedin.com/in/aniruddh-uniyal-8069683b2/" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">LinkedIn</a>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="js/dither-shader.js"></script>
+  <script src="js/marquee.js"></script>
+  <script src="js/hero.js"></script>
+  <script src="js/laptop.js"></script>
+  <script src="js/work.js"></script>
+</body>
+</html>
