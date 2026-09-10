@@ -8,7 +8,7 @@
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
   const texLoader = new THREE.TextureLoader();
-  const texture = texLoader.load("/assets/earth.png");
+  const texture = texLoader.load("assets/earth.png");
   texture.minFilter = THREE.LinearFilter;
   texture.magFilter = THREE.LinearFilter;
 
