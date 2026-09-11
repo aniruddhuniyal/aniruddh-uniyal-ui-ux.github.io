@@ -3,7 +3,7 @@
 // Row 1 scrolls left, Row 2 scrolls right (set in CSS via .marquee--reverse).
 
 const ROW_1_ITEMS = [
-  "Stak", "Docker", "Containers", "Bash", "Windows", "UI/UX", "Frontend", "Backend", "Full Stack"
+  "Stack", "Docker", "Containers", "Bash", "Windows", "UI/UX", "Frontend", "Backend", "Full Stack"
 ];
 
 const ROW_2_ITEMS = [
